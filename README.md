@@ -34,6 +34,10 @@ python3 my-recognition.py snake_testing.png
 
 Paste this code into terminal, and you should be good 
 
-if you want to download anouther snake pictue, make sure put it into the same folder, not download folder. Also change the snake_testing.png to your file name, make sure add png or jpg. 
+if you want to download anouther snake pictue, make sure put it into the same folder, not download folder. Also change the snake_testing.png to your file name, make sure add png or jpg at the end of the file name
 
-[View a video explanation here](video link)
+here is video 
+
+https://github.com/user-attachments/assets/5305d720-1cbe-43eb-871e-f27c4285ae9c
+
+
