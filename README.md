@@ -6,7 +6,7 @@ The main porpuse of the project is using ai to identify the name, kind of the sn
 
  
 <img width="661" height="493" alt="code" src="https://github.com/user-attachments/assets/28d8e8bf-bb58-4604-b58e-22dde87458dc" />
-This project depends on ai image recongation in the getson orin. In this case, I used google net to identify the imgae.
+This project depends on ai image recongation in the jetson orin. In this case, I used google net to identify the imgae.
 
 First, you will need to import the necessary functions for this.
 
