@@ -1,20 +1,26 @@
 #!/usr/bin/python3
-
+#ai needed
 import jetson_inference
 import jetson_utils
-
+#get location of the file 
 import argparse
 
+#parser file name and use google net
 parser = argparse.ArgumentParser()
-parser.add_argument("filename", type=str, help="filename of the image to process")
-parser.add_argument("--network", type=str, default="googlenet", help="model to use, can be:  googlenet, resnet-18, ect. (see --help for others)")
-opt = parser.parse_args()
-img = jetson_utils.loadImage(opt.filename)
-net = jetson_inference.imageNet(opt.network)
-class_idx, confidence = net.Classify(img)
+parser.add_argument("filename", type=str)
+parser.add_argument("googlenet", type=str)
 
+#get image
+img = jetson_utils.loadImage(opt.filename)
+#get recogination network
+net = jetson_inference.imageNet(googlenet)
+
+
+#get the index of the class
+class_idx = net.Classify(img)
+#get the name of the class
 class_desc = net.GetClassDesc(class_idx)
-print("this is a  "+ str(class_desc))# +" (class #"+ str(class_idx),")")
+print("this is a  "+ str(class_desc))
 
 if class_idx in[52, 55, 56, 58, 61, 62]:
     print("this snake is non venomous")
@@ -24,4 +30,4 @@ elif class_idx in[54, 63, 64, 65, 66, 67, 68]:
     print("this snake is venomous ")
 else:
     print("this "+ class_desc +" is so cute!!! ")
-# python3 my-recognition.py polar_bear.jpg
+# python3 my-recognition.py snake-testing.jpg
