@@ -26,9 +26,9 @@ Make sure you already have the Jetson-inferson project ready, if not go to https
 
 You also want to make sure you have python downloaded, so you can run it.
 
-Next download everything, put it into a folder .
+Next download everything, put it into a folder called something
 
-Now run the code in the terminal, here is the example 
+Now cd your something folder, than run the code. 
 
 python3 my-recognition.py snake_testing.png
 
