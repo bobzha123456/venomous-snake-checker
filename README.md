@@ -23,10 +23,17 @@ If the user didn't give us a picture of a snake, print this animal is so cute.
 ## Running this project
 
 Make sure you already have the Jetson-inferson project ready, if not go to https://github.com/dusty-nv/jetson-inference
+
 You also want to make sure you have python downloaded, so you can run it.
+
 Next download everything, put it into a folder .
+
 Now run the code in the terminal, here is the example 
+
 python3 my-recognition.py snake_testing.png
+
 Paste this code into terminal, and you should be good 
+
 if you want to download anouther snake pictue, make sure put it into the same folder, not download folder. Also change the snake_testing.png to your file name, make sure add png or jpg. 
+
 [View a video explanation here](video link)
